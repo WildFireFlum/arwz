@@ -1,0 +1,37 @@
+# Python environments and bytecode
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Rust build outputs
+/target/
+src/arw-rust/target/
+
+# Keep local Python tooling and exploratory material out of the Rust repository
+/src/*.py
+/src/*.json
+/src/*.c
+/src/*.h
+/src/*.sh
+/src/Dockerfile
+/src/.dockerignore
+/src/MANIFEST.sha256
+/src/arw-rust/Cargo.lock
+/experiments/
+/docs/rust/OPTIMIZATION.md
+
+# Personal photos, benchmark inputs, and machine-specific profiling captures
+experiments/local-data/
+experiments/performance-data/
+*.local.json
+
+# Generated handoff archives and preserved pre-cleanup snapshots
+experiments/releases/
+experiments/legacy-root/
+experiments/legacy-handoff/
+experiments/legacy-c/
+
+# Native build products and local OpenCode configuration
+*.so
+.opencode/

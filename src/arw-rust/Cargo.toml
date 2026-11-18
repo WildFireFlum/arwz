@@ -1,0 +1,18 @@
+[package]
+name = "arw-archive"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Lossless Sony ARW2 archive codec"
+license = "MIT"
+
+[features]
+default = []
+profile-counters = []
+
+[dependencies]
+lzma-rs = "0.3"
+lzma-rust2 = { version = "0.25", default-features = false, features = ["std", "encoder", "xz"] }
+
+[lib]
+crate-type = ["rlib", "cdylib", "staticlib"]
